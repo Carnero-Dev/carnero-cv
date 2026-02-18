@@ -74,8 +74,16 @@ button {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: var(--accent);
+}
+.section-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    opacity: 0.8;
 }
 
 /* --- CLASES DE UTILIDAD  --- */
@@ -306,7 +314,7 @@ nav select.language-selector {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80px; /* Ancho fijo para alinear el texto */
+    width: 80px; 
     transition: var(--transition);
 }
 
@@ -315,7 +323,7 @@ nav select.language-selector {
 }
 
 .skill-icon {
-    width: 60px; /* Tamaño de la imagen */
+    width: 60px; 
     height: 60px;
     margin-bottom: 0.75rem;
     object-fit: contain;
@@ -340,10 +348,10 @@ nav select.language-selector {
 
 .badge-pill {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(226, 124, 69, 0.3); /* Borde naranja translúcido */
+    border: 1px solid rgba(226, 124, 69, 0.3); 
     color: var(--accent);
     padding: 0.5rem 1.5rem;
-    border-radius: 50px; /* Forma de píldora */
+    border-radius: 50px; 
     font-size: 0.85rem;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -353,6 +361,91 @@ nav select.language-selector {
     background: var(--accent);
     color: var(--text-white);
     transform: scale(1.05);
+}
+
+/* --- CURRICULUM --- */
+#curriculum .two-columns-container {
+    align-items: flex-start; 
+    gap: 3rem;
+}
+
+.cv-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+
+
+.hard-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1.5px solid rgba(255, 255, 255, 0.3); 
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.hard-card:hover {
+     transform: translateY(-5px);
+}
+
+
+.soft-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.soft-card h3 {
+    text-decoration: underline; 
+    text-underline-offset: 8px;
+    text-decoration-color: var(--accent);
+}
+
+.date {
+    display: block;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.hard-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.hard-card h4 {
+    font-style: italic;
+    color: var(--text-gray);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+
+.cv-wrapper ul {
+    list-style: none;
+}
+
+.cv-wrapper ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-white);
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.cv-wrapper ul li::before {
+    content: "•";
+    color: var(--text-white);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 /* --- BACKGROUND --- */
