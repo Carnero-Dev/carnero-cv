@@ -126,7 +126,36 @@ section { display: flex; align-items: center; justify-content: center; }
     transition: all 0.3s ease;
 }
 
+/* --- MINI STACK & BADGES PARA CARDS --- */
+.card-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
 
+.mini-icon {
+    width: 25px; 
+    height: 25px;
+    filter: grayscale(1);
+    transition: var(--transition);
+}
+.hard-card:hover .mini-icon, .hard-card:hover .mini-badge { filter: grayscale(0);  }
+.soft-card:hover .mini-icon, .soft-card:hover .mini-badge { filter: grayscale(0);  }
+
+.mini-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    background: rgba(226, 124, 69, 0.1);
+    border: 1px solid rgba(226, 124, 69, 0.2);
+    border-radius: 20px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: grayscale(1)
+}
 
 
 /* --- BARRA DE NAVEGACIÓN --- */
@@ -350,11 +379,7 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     padding: 2rem;
     transition: var(--transition);
 }
-
-.hard-card:hover {
-     transform: translateY(-5px);
-     border-color: var(--accent);
-}
+.hard-card:hover { transform: translateY(-5px); border-color: var(--accent); }
 
 
 .soft-card {
@@ -363,6 +388,8 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
+.soft-card:hover { border-color: var(--blue-light); }
+
 
 .soft-card h3 {
     text-decoration: underline; 
