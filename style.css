@@ -289,8 +289,70 @@ nav select.language-selector {
 .hobby-item .emoji {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
-    /* Efecto de brillo azul opcional como en la imagen */
     filter: drop-shadow(0 0 5px rgba(0, 150, 255, 0.4));
+}
+
+/* --- SKILLS --- */
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* Ancho fijo para alinear el texto */
+    transition: var(--transition);
+}
+
+.icon-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    width: 60px; /* Tamaño de la imagen */
+    height: 60px;
+    margin-bottom: 0.75rem;
+    object-fit: contain;
+    background-color: #1a1c2c;
+    border-radius: 12px;              
+    object-fit: contain;
+}
+
+.icon-item span {
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    font-weight: 600;
+    text-align: center;
+}
+
+.softSkills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.badge-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(226, 124, 69, 0.3); /* Borde naranja translúcido */
+    color: var(--accent);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px; /* Forma de píldora */
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.badge-pill:hover {
+    background: var(--accent);
+    color: var(--text-white);
+    transform: scale(1.05);
 }
 
 /* --- BACKGROUND --- */
