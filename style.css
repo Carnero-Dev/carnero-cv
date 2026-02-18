@@ -10,6 +10,7 @@
     --dark: #1a1c2c;
     --light: #212333;
     --dark-purple: #433757;
+    --light-purple: #554969;
     --accent: #e27c45;
     --text-white: #e2e8f0;
     --text-gray: #94a3b8;
@@ -22,7 +23,6 @@
 html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    width: 100%;
     font-size: 16px;
 }
 
@@ -31,11 +31,6 @@ body {
     background: linear-gradient(135deg, var(--dark) 0%, var(--dark-purple) 100%);
     color: var(--text-white);
     line-height: 1.6;
-}
-
-
-main {
-    padding: 6rem 0;
 }
 
 /* ---TIPOGRAFÍA GENÉRICA --- */
@@ -77,18 +72,32 @@ button {
 
 /* --- CLASES DE UTILIDAD  --- */
 .container-center {
+    margin: 0 auto;
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    z-index: 1;
 }
 
 .section-wrapper {
+    display: flex;
     padding: 5rem 0;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .accent {
     color: var(--accent);
+}
+
+/* --- COMPONENTES ---*/
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-links img {
+    width: 4rem;
+    border-radius: var(--radius-md);
 }
 
 /* --- BARRA DE NAVEGACIÓN --- */
@@ -129,3 +138,46 @@ nav select.language-selector {
 
 /* --- HERO --- */
 
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.hero-content div {
+     flex: 1;
+}
+
+.profile-image {
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 124px;
+    background-color: #1a1c2c;
+    border-radius: 1rem;
+    border: 2px solid var(--dark-purple);
+}
+.profile-image img {
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.hero-content h2 {
+    color: var(--text-white);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.hero-content h3 {
+    color: var(--text-gray);
+    font-size: 1.25rem;
+}
+
+.bg-hero {
+    background-image: linear-gradient(rgba(26, 28, 44, 0.85), rgba(26, 28, 44, 0.85)), url('img/banner-hero.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
