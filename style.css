@@ -14,6 +14,7 @@
     --accent: #e27c45;
     --text-white: #e2e8f0;
     --text-gray: #94a3b8;
+    --card-gray: rgba(255, 255, 255, 0.055);
     
     /* Variables de diseño */
     --radius-lg: 1.5rem;
@@ -70,24 +71,45 @@ button {
     font-family: inherit;
 }
 
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
 /* --- CLASES DE UTILIDAD  --- */
 .container-center {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     max-width: 1200px;
     z-index: 1;
 }
 
-.section-wrapper {
+.two-columns-container {
     display: flex;
-    padding: 5rem 0;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
 }
 
+.two-columns-container div {
+    flex: 1;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .accent {
     color: var(--accent);
 }
+
 
 /* --- COMPONENTES ---*/
 .social-links {
@@ -99,6 +121,26 @@ button {
     width: 4rem;
     border-radius: var(--radius-md);
 }
+
+.glass-box {
+    background: rgba(31, 26, 44, 0.8); 
+    backdrop-filter: blur(10px); 
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin: 6rem 0;
+    border: 2px solid var(--text-white);
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: var(--card-gray); 
+    color: var(--text-white);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+}
+
 
 /* --- BARRA DE NAVEGACIÓN --- */
 header {
@@ -154,7 +196,7 @@ nav select.language-selector {
 .profile-image {
     overflow: hidden;
     max-width: 400px;
-    min-width: 124px;
+    min-width: 200px;
     background-color: #1a1c2c;
     border-radius: 1rem;
     border: 2px solid var(--dark-purple);
@@ -180,4 +222,81 @@ nav select.language-selector {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+/* --- ABOUT ME ---*/
+.container-personalInfo, .hobby-item {
+    background: var(--card-gray); 
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.container-hobbies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.hobby-item {
+    display: flex;
+    background: var(--card-gray); 
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container-personalInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about-content {
+    font-size: 1.5rem;
+}
+
+.info-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.info-item .label {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.info-item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.hobby-item p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.hobby-item .emoji {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    /* Efecto de brillo azul opcional como en la imagen */
+    filter: drop-shadow(0 0 5px rgba(0, 150, 255, 0.4));
+}
+
+/* --- BACKGROUND --- */
+.bg-dark {
+    background-color: var(--dark);
+}
+.bg-light {
+    background-color: var(--light);
 }
