@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Porfolio de Carlos Carnero, Desarrollador Full Stack y Videojuegos en Málaga.">
@@ -10,12 +11,14 @@
 <body>
 	<header>
 		<nav>
-			<div>CCC</div>
+			<div>
+				<p>CCC</p>
+			</div>
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Sobre Mi</a></li>
-				<li><a href="#">Proyectos</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#hero">Inicio</a></li>
+				<li><a href="#about">Sobre Mi</a></li>
+				<li><a href="#skills">Proyectos</a></li>
+				<li><a href="#contact">Contacto</a></li>
 				<li>
 					<select class="language-selector">
 						<option value="es">Español</option>
@@ -26,13 +29,13 @@
 		</nav>
 	</header>
 	<main>
-		<section class="bg-hero ">
+		<section id="hero" class="bg-hero ">
 			<div class="container-center">
 				<div class="hero-content">
 					<div>
 						<h1> Carlos <span class="accent">Carnero Cabrera</span></h1>
 					</div>
-					<div class = "profile-image">
+					<div class="profile-image">
 						<img src="img/profile.jpg" alt="Carlos Carnero Cabrera">
 					</div>
 					<div>
@@ -52,15 +55,30 @@
 				<h2 class="section-title">Sobre Mi</h2>
 				<div class="two-columns-container">
 					<div>
-						<p>Para mí, los videojuegos siempre han sido una forma de expresión artística. He aprendido por curiosidad e ingeniería inversa. Siempre he vivido entre dos mundos que me definen: <span class="accent">tecnología y el arte.</span></p>
-						<button class="download-cv">Descargar CV</button>
+						<p>Mi trayectoria une la ingeniería robusta con la creación artística. Como <span
+								class="accent">Programador Full Stack y Desarrollador de Videojuegos</span>, construyo
+							arquitecturas escalables y sistemas optimizados al servicio del usuario. Aprendí mediante
+							ingeniería inversa, desarrollando una capacidad analítica clave para <span
+								class="accent">resolver crisis técnicas y optimizar flujos de trabajo</span>. Analizo
+							rápido y ejecuto soluciones sin frenar al equipo, combinando la precisión del software con
+							la <span class="accent">sensibilidad del diseño interactivo</span> y el arte.</p>
+						<button id="download-fullstack" class="download-cv">Descargar CV - FullStack</button>
+						<button id="download-gamedev" class="download-cv">Descargar CV - GameDev</button>
 					</div>
 					<div>
 						<div class="container-personalInfo">
-								<div class="info-item"><span class="label">Edad:</span> <p>24 años</p></div>
-								<div class="info-item"><span class="label">Ubicación:</span> <p>Málaga, España</p></div>
-								<div class="info-item"><span class="label">Idiomas:</span> <p>Español nativo / Inglés (B2)</p></div>
-								<div class="info-item"><span class="label">Carné de conducir:</span> <p>B </p></div>
+							<div class="info-item"><span class="label">Edad:</span>
+								<p>24 años</p>
+							</div>
+							<div class="info-item"><span class="label">Ubicación:</span>
+								<p>Málaga, España</p>
+							</div>
+							<div class="info-item"><span class="label">Idiomas:</span>
+								<p>Español nativo / Inglés (B2)</p>
+							</div>
+							<div class="info-item"><span class="label">Carné de conducir:</span>
+								<p>B </p>
+							</div>
 						</div>
 						<div class="container-hobbies">
 							<div class="hobby-item">
@@ -84,8 +102,8 @@
 								<p>Astronomia</p>
 							</div>
 							<div class="hobby-item">
-								<div class="emoji">🍳</div>
-								<p>Cocinar</p>
+								<div class="emoji">♟️</div>
+								<p>Estrategia</p>
 							</div>
 						</div>
 					</div>
@@ -96,25 +114,47 @@
 			<div class="container-center">
 				<h2 class="section-title">Skills y Stack</h2>
 				<div class="stack-container">
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=unity"><span>Unity</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=unreal"><span>Unreal Engine</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=blender"><span>Blender</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=cs"><span>C sharp</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=java"><span>Java</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=php"><span>php</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=html"><span>HTML</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=css"><span>CSS</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=javascript"><span>JavaScript</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=react"><span>React</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql"><span>MySQL</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="img/jira-icon.png"><span>Jira</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="img/linear-icon.png"><span>Linear</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="img/sourcetree-icon.png"><span>Sourcetree</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="img/perforce-icon.jpg"><span>Perforce</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=git"><span>Git</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=windows"><span>Windows</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=ubuntu"><span>Ubuntu</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=azure"><span>Azure</span></div>	
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=unity"><span>Unity</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=unreal"><span>Unreal Engine</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=blender"><span>Blender</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=photoshop"><span>Photoshop</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=cs"><span>C
+							sharp</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=java"><span>Java</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=spring"><span>Springboot</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=net"><span>.Net</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=php"><span>php</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=html"><span>HTML</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=css"><span>CSS</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=javascript"><span>JavaScript</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=react"><span>React</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=mysql"><span>MySQL</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="img/jira-icon.png"><span>Jira</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="img/linear-icon.png"><span>Linear</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="img/sourcetree-icon.png"><span>Sourcetree</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="img/perforce-icon.jpg"><span>Perforce</span>
+					</div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=git"><span>Git</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=windows"><span>Windows</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=ubuntu"><span>Ubuntu</span></div>
+					<div class="icon-item"> <img class="skill-icon"
+							src="https://skillicons.dev/icons?i=azure"><span>Azure</span></div>
 				</div>
 				<div class="softSkills-container">
 					<span class="badge-pill"> 🤝 Trabajo en equipos multidisciplinares </span>
@@ -126,7 +166,7 @@
 			</div>
 		</section>
 		<section id="curriculum" class=" bg-dark">
-			<div class ="container-center">
+			<div class="container-center">
 				<h2 class="section-title">Curriculum</h2>
 				<div class="two-columns-container">
 					<div class="cv-wrapper">
@@ -138,8 +178,17 @@
 							<ul>
 								<li>Curso práctico de 56 horas en soft skills.</li>
 								<li>Certificado de Azure (AZ-900).</li>
-								<li>ITodo desarrollo Full Stack (Frontend, Backend, BbDd, Despliegue).</li>
+								<li>Todo desarrollo Full Stack (Frontend, Backend, BbDd, Despliegue).</li>
 							</ul>
+							<div class="card-stack">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=java" title="Java">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=git" title="Git">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=spring" title="Springboot">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=react" title="React">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=html" title="HTML">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=css" title="CSS">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=javascript" title="JavaScript">
+							</div>
 						</div>
 						<div class="hard-card">
 							<span class="date">Septiembre 2022 - Junio 2024</span>
@@ -150,6 +199,14 @@
 								<li>Participación en equipos multidisciplinares y Game Jams..</li>
 								<li>Descubrí mi vocación por la programación y diseño de videojuegos.</li>
 							</ul>
+							<div class="card-stack">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=unity" title="Unity">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=unreal" title="Unreal">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=blender" title="Blender">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=photoshop" title="Photoshop">
+								<img class="mini-icon" src="img/sourcetree-icon.png" title="Sourcetree">
+								<span class="mini-badge">Trabajo con equipos Multidisciplinares</span>
+							</div>
 						</div>
 						<div class="soft-card">
 							<h3>Otros Estudios</h3>
@@ -158,6 +215,15 @@
 								<li>Administración de sistemas informáticos en red (ASIR).</li>
 								<li>Administración y gestión de empresas.</li>
 							</ul>
+							<div class="card-stack">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=ubuntu" title="Ubuntu">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=windows" title="Windows">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=html" title="HTML">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=css" title="CSS">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=phm" title="phm">
+								<span class="mini-badge">Ciberseguridad</span>
+								<span class="mini-badge">Administración</span>
+							</div>
 						</div>
 					</div>
 					<div class="cv-wrapper">
@@ -175,6 +241,15 @@
 								<li>Uso de metodología Scrum utilizando Jira y otras herramientas de Atlasian.</li>
 								<li>Mejoras de optimización de hasta un 500% en varios proyectos del equipo.</li>
 							</ul>
+							<div class="card-stack">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=unity" title="Unity">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=unreal" title="Unreal">
+								<img class="mini-icon" src="https://skillicons.dev/icons?i=blender" title="Blender">
+								<img class="mini-icon" src="img/jira-icon.png" title="Jira">
+								<img class="mini-icon" src="img/perforce-icon.jpg" title="Perforce">
+								<span class="mini-badge">Liderazgo</span>
+								<span class="mini-badge">Scrum</span>
+							</div>
 						</div>
 						<div class="soft-card">
 							<h3>Trabajos Varios</h3>
@@ -184,7 +259,15 @@
 								<li>Mozo de almacén / Operador Logístico</li>
 								<li>Ayudante de veterinario</li>
 							</ul>
-							<p><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos en entornos de alta presión con personas de diversos países.</p>
+							<p><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos
+								en entornos de alta presión con personas de diversos países.</p>
+							<div class="card-stack">
+								<span class="mini-badge">Inglés</span>
+								<span class="mini-badge">Audacia</span>
+								<span class="mini-badge">Cadena de mandos</span>
+								<span class="mini-badge">Disciplina</span>
+								<span class="mini-badge">Autogestión</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -227,7 +310,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" class=" bg-dark">
+		<section id="contact" class=" bg-contact">
 			<div class="container-center">
 				<div class="two-columns-container">
 					<div>
@@ -245,7 +328,8 @@
 								<li>Presencial (Málaga) o Remoto.</li>
 								<li>Disponibilidad para desplazamientos ocasionales a nivel internacional.</li>
 							</ul>
-							<button class="download-cv">Descargar CV</button>
+							<button class="download-cv">Descargar CV - FullStack</button>
+							<button class="download-cv">Descargar CV - GameDev</button>
 						</div>
 						<h3> Redes Personales </h3>
 						<div class="social-links">
@@ -257,13 +341,19 @@
 					<div>
 						<h3 class="section-title">Última Actividad</h3>
 						<div class="project-card">
-							<div><iframe width="560" height="315" src="https://www.youtube.com/embed/HpjYUECTpGM?si=KjksUafnxcedZY-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+							<div><iframe width="560" height="315"
+									src="https://www.youtube.com/embed/HpjYUECTpGM?si=KjksUafnxcedZY-M"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 							<div>
 								<span class="date">12 febrero - 2026</span>
 								<h3>Lanzamiento de página de Steam</h3>
-								<p>Descripción breve del proyecto destacado, tecnologías utilizadas y resultados obtenidos.</p>
+								<p>Descripción breve del proyecto destacado, tecnologías utilizadas y resultados
+									obtenidos.</p>
 								<button class="read-more">Leer más...</button>
-								<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de Steam</a>
+								<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de
+									Steam</a>
 							</div>
 						</div>
 					</div>
@@ -271,8 +361,9 @@
 			</div>
 		</section>
 	</main>
-	<footer class="bg-light">
-        <p>© 2026 Carlos Carnero Cabrera | Málaga</p>
-    </footer>
+	<footer>
+		<p>© 2026 Carlos Carnero Cabrera | Málaga</p>
+	</footer>
 </body>
+
 </html>
