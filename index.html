@@ -16,49 +16,51 @@
 				<li><a href="#">Sobre Mi</a></li>
 				<li><a href="#">Proyectos</a></li>
 				<li><a href="#">Contacto</a></li>
-				<div class="language-selector">
-					<li><a href="#">Español</a></li>
-					<li><a href="#">English</a></li>
-				</div>
+				<li>
+					<select class="language-selector">
+						<option value="es">Español</option>
+						<option value="en">English</option>
+					</select>
+				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section class="hero bg-hero">
+		<section class="bg-hero ">
 			<div class="container-center">
-				<div>
-					<h1> Carlos <span class="accent">Carnero Cabrera</span></h1>
-				</div>
-				<div>
-					<img src="img/profile.jpg" alt="Carlos Carnero Cabrera">
-				</div>
-				<div>
-					<h2> Full Stack y Desarrollador de videojuegos </h2>
-					<h3> Redes Personales </h3>
-					<div class="social-links">
-						<a href="#"><img src="img/itchio-icon.png" alt="Itchio"></a>
-						<a href="#"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"></a>
-						<a href="#"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn"></a>
+				<div class="hero-content">
+					<div>
+						<h1> Carlos <span class="accent">Carnero Cabrera</span></h1>
+					</div>
+					<div class = "profile-image">
+						<img src="img/profile.jpg" alt="Carlos Carnero Cabrera">
+					</div>
+					<div>
+						<h2> Programador Full Stack y Desarrollador de videojuegos </h2>
+						<h3> Redes Profesionales </h3>
+						<div class="social-links">
+							<a href="#"><img src="img/itchio-icon.png" alt="Itchio"></a>
+							<a href="#"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"></a>
+							<a href="#"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="about" class="section-wrapper bg-dark">
-			<div class="container-center">
+		<section id="about" class=" bg-dark">
+			<div class="container-center glass-box about-content">
 				<h2 class="section-title">Sobre Mi</h2>
-				<div class="two-column-grid">
+				<div class="two-columns-container">
 					<div>
 						<p>Para mí, los videojuegos siempre han sido una forma de expresión artística. He aprendido por curiosidad e ingeniería inversa. Siempre he vivido entre dos mundos que me definen: <span class="accent">tecnología y el arte.</span></p>
 						<button class="download-cv">Descargar CV</button>
 					</div>
 					<div>
 						<div class="container-personalInfo">
-							<ul>
-								<li><strong>Edad:</strong> 24 años</li>
-								<li><strong>Ubicación:</strong> Málaga, España</li>
-								<li><strong>Idiomas:</strong> Español nativo / Inglés (B2)</li>
-								<li><strong>Carné de conducir:</strong> B </li>
-							</ul>
+								<div class="info-item"><span class="label">Edad:</span> <p>24 años</p></div>
+								<div class="info-item"><span class="label">Ubicación:</span> <p>Málaga, España</p></div>
+								<div class="info-item"><span class="label">Idiomas:</span> <p>Español nativo / Inglés (B2)</p></div>
+								<div class="info-item"><span class="label">Carné de conducir:</span> <p>B </p></div>
 						</div>
 						<div class="container-hobbies">
 							<div class="hobby-item">
@@ -90,40 +92,43 @@
 				</div>
 			</div>
 		</section>
-		<section id="skills" class="section-wrapper bg-light">
+		<section id="skills" class=" bg-light">
 			<div class="container-center">
 				<h2 class="section-title">Skills y Stack</h2>
-				<div class="stack-grid">
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=cs"><span>C sharp</span></div>
+				<div class="stack-container">
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=unity"><span>Unity</span></div>
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=unreal"><span>Unreal Engine 5</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=unreal"><span>Unreal Engine</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=blender"><span>Blender</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=cs"><span>C sharp</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=java"><span>Java</span></div>
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=php"><span>php</span></div>	
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=html"><span>HTML</span></div>
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=css"><span>CSS</span></div>
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=javascript"><span>JavaScript</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=blender"><span>Blender</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=sourcetree"><span>Sourcetree</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=jira"><span>Jira</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=perforce"><span>Perforce</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=php"><span>php</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql"><span>MySQL</span></div>	
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=react"><span>React</span></div>	
-					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=azure"><span>Azure</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql"><span>MySQL</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="img/jira-icon.png"><span>Jira</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="img/linear-icon.png"><span>Linear</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="img/sourcetree-icon.png"><span>Sourcetree</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="img/perforce-icon.jpg"><span>Perforce</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=git"><span>Git</span></div>	
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=windows"><span>Windows</span></div>	
 					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=ubuntu"><span>Ubuntu</span></div>	
+					<div class="icon-item"> <img class="skill-icon" src="https://skillicons.dev/icons?i=azure"><span>Azure</span></div>	
 				</div>
-				<div class="softSkills-grid">
-					<span class="badge-pill"> Trabajo en equipos multidisciplinares </span>
-					<span class="badge-pill"> Autodidacta </span>
-					<span class="badge-pill"> Organizado </span>
-					<span class="badge-pill"> Trabajo bajo presión </span>
-					<span class="badge-pill"> Audacia </span>
+				<div class="softSkills-container">
+					<span class="badge-pill"> 🤝 Trabajo en equipos multidisciplinares </span>
+					<span class="badge-pill"> 📚 Autodidacta </span>
+					<span class="badge-pill"> 📋 Organizado </span>
+					<span class="badge-pill"> 💪 Trabajo bajo presión </span>
+					<span class="badge-pill"> 🚀 Audacia </span>
 				</div>
 			</div>
 		</section>
-		<section id="curriculum" class="section-wrapper bg-dark">
+		<section id="curriculum" class=" bg-dark">
 			<div class ="container-center">
 				<h2 class="section-title">Curriculum</h2>
-				<div class="two-column-grid">
+				<div class="two-columns-container">
 					<div class="cv-wrapper">
 						<h3 class="section-subtitle">Educación</h3>
 						<div class="hard-card">
@@ -154,71 +159,77 @@
 								<li>Administración y gestión de empresas.</li>
 							</ul>
 						</div>
-						<div class="cv-wrapper">
-							<h3 class="section-subtitle">Experiencia Laboral</h3>
-							<div class="hard-card">
-								<span class="date">Mayo 2024 - Actualidad</span>
-								<h3>Programador Lider en Unity y Unreal || Co-Fundador</h3>
-								<h4>Typing Monnke</h4>
-								<ul>
-									<li>Coordinación de un equipo multidisciplinar</li>
-									<li>Resolución de crisis técnicas y de producción</li>
-									<li>Ingeniería inversa e integración de nuevas tecnologías en los proyectos.</li>
-									<li>Desarrollo de sistemas escalables orientadas a herramientas de diseño.</li>
-									<li>Gestión de flujos de trabajo con Git y GitHub.</li>
-									<li>Uso de metodología Scrum utilizando Jira y otras herramientas de Atlasian.</li>
-									<li>Mejoras de optimización de hasta un 500% en varios proyectos del equipo.</li>
-								</ul>
-							</div>
-							<div class="soft-card">
-								<h3>Trabajos Varios</h3>
-								<h4> Europa (Paises Bajos, Suecia, Alemania) y ST Marten (Antillas)</h4>
-								<ul>
-									<li>Bartender / Camarero en eventos.</li>
-									<li>Mozo de almacén / Operador Logístico</li>
-									<li>Ayudante de veterinario</li>
-								</ul>
-								<p><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos en entornos de alta presión con personas de diversos países.</p>
-							</div>
+					</div>
+					<div class="cv-wrapper">
+						<h3 class="section-subtitle">Experiencia Laboral</h3>
+						<div class="hard-card">
+							<span class="date">Mayo 2024 - Actualidad</span>
+							<h3>Programador Lider en Unity y Unreal || Co-Fundador</h3>
+							<h4>Typing Monnke</h4>
+							<ul>
+								<li>Coordinación de un equipo multidisciplinar</li>
+								<li>Resolución de crisis técnicas y de producción</li>
+								<li>Ingeniería inversa e integración de nuevas tecnologías en los proyectos.</li>
+								<li>Desarrollo de sistemas escalables orientadas a herramientas de diseño.</li>
+								<li>Gestión de flujos de trabajo con Git y GitHub.</li>
+								<li>Uso de metodología Scrum utilizando Jira y otras herramientas de Atlasian.</li>
+								<li>Mejoras de optimización de hasta un 500% en varios proyectos del equipo.</li>
+							</ul>
+						</div>
+						<div class="soft-card">
+							<h3>Trabajos Varios</h3>
+							<h4> Europa (Paises Bajos, Suecia, Alemania) y ST Marten (Antillas)</h4>
+							<ul>
+								<li>Bartender / Camarero en eventos.</li>
+								<li>Mozo de almacén / Operador Logístico</li>
+								<li>Ayudante de veterinario</li>
+							</ul>
+							<p><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos en entornos de alta presión con personas de diversos países.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="projects" class="section-wrapper bg-light">
+		<section id="projects" class=" bg-light">
 			<div class="container-center">
 				<h2 class="section-title">Proyectos</h2>
-				<div class="project-grid">
+				<div class="project-wrapper">
 					<div class="project-card">
-						<img src="img/project-dishdraft.png">
-						<span class="category">SaaS</span>
-						<h3>DishDraft</h3>
-						<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
-						<button class="read-more">Leer más...</button>
-						<a href="https://www.dishdraft.es">Ver Demo Tecnica</a>
+						<div><img src="img/project-dishdraft.png"></div>
+						<div>
+							<span class="category">SaaS</span>
+							<h3>DishDraft</h3>
+							<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
+							<button class="read-more">Leer más...</button>
+							<a href="https://www.dishdraft.es">Ver Demo Tecnica</a>
+						</div>
 					</div>
 					<div class="project-card">
-						<img src="img/project-disconnected.jpg">
-						<span class="category">Game Dev</span>
-						<h3>Disconnected</h3>
-						<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
-						<button class="read-more">Leer más...</button>
-						<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de Steam</a>
+						<div><img src="img/project-disconnected.jpg"></div>
+						<div>
+							<span class="category">Game Dev</span>
+							<h3>Disconnected</h3>
+							<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
+							<button class="read-more">Leer más...</button>
+							<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de Steam</a>
+						</div>
 					</div>
 					<div class="project-card">
-						<img src="img/project-typingmonke.png">
-						<span class="category">TeamWork</span>
-						<h3>Typing Monke</h3>
-						<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
-						<button class="read-more">Leer más...</button>
-						<a href="https://linktr.ee/TypingMonke">Linktree del equipo</a>
+						<div><img src="img/project-typingmonke.png"></div>
+						<div>
+							<span class="category">TeamWork</span>
+							<h3>Typing Monke</h3>
+							<p>Descripción breve del proyecto, tecnologías utilizadas y resultados obtenidos.</p>
+							<button class="read-more">Leer más...</button>
+							<a href="https://linktr.ee/TypingMonke">Linktree del equipo</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="section-wrapper bg-dark">
+		<section id="contact" class=" bg-dark">
 			<div class="container-center">
-				<div class="two-column-grid">
+				<div class="two-columns-container">
 					<div>
 						<h3 class="section-title">Información de Contacto</h3>
 						<ul>
@@ -246,19 +257,21 @@
 					<div>
 						<h3 class="section-title">Última Actividad</h3>
 						<div class="project-card">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/HpjYUECTpGM?si=KjksUafnxcedZY-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<span class="date">12 febrero - 2026</span>
-							<h3>Lanzamiento de página de Steam</h3>
-							<p>Descripción breve del proyecto destacado, tecnologías utilizadas y resultados obtenidos.</p>
-							<button class="read-more">Leer más...</button>
-							<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de Steam</a>
+							<div><iframe width="560" height="315" src="https://www.youtube.com/embed/HpjYUECTpGM?si=KjksUafnxcedZY-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+							<div>
+								<span class="date">12 febrero - 2026</span>
+								<h3>Lanzamiento de página de Steam</h3>
+								<p>Descripción breve del proyecto destacado, tecnologías utilizadas y resultados obtenidos.</p>
+								<button class="read-more">Leer más...</button>
+								<a href="https://store.steampowered.com/app/4346240/Disconnected/">Ver Página de Steam</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="bg-light">
         <p>© 2026 Carlos Carnero Cabrera | Málaga</p>
     </footer>
 </body>
