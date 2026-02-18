@@ -1,39 +1,44 @@
-/* --- 1. RESET Y BASES --- */
+/* --- RESET Y BASES --- */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Fundamental para que los paddings no ensanchen los divs */
+    box-sizing: border-box; 
 }
 
 :root {
     /* Paleta de colores */
     --dark: #1a1c2c;
-    --clear: #212333;
+    --light: #212333;
     --dark-purple: #433757;
     --accent: #e27c45;
     --text-white: #e2e8f0;
     --text-gray: #94a3b8;
     
     /* Variables de diseño */
-    --transition: all 0.3s ease;
     --radius-lg: 1.5rem;
     --radius-md: 0.75rem;
 }
 
-html {
+html, body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
-    font-size: 16px; /* Base para rem */
+    width: 100%;
+    font-size: 16px;
 }
 
 body {
-    background-color: var(--dark);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-purple) 100%);
     color: var(--text-white);
-    font-family: 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-/* --- 2. TIPOGRAFÍA GENÉRICA --- */
+
+main {
+    padding: 6rem 0;
+}
+
+/* ---TIPOGRAFÍA GENÉRICA --- */
 h1, h2, h3, h4 {
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -51,7 +56,6 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-    transition: var(--transition);
 }
 
 ul {
@@ -71,7 +75,7 @@ button {
     font-family: inherit;
 }
 
-/* --- 3. CLASES DE UTILIDAD (MARCO GENERAL) --- */
+/* --- CLASES DE UTILIDAD  --- */
 .container-center {
     width: 90%;
     max-width: 1200px;
@@ -87,17 +91,41 @@ button {
     color: var(--accent);
 }
 
-/* --- 4. SCROLLBAR (Opcional pero recomendado) --- */
-::-webkit-scrollbar {
-    width: 8px;
+/* --- BARRA DE NAVEGACIÓN --- */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(26, 28, 44, 0.8); 
+    backdrop-filter: blur(10px);      
 }
-::-webkit-scrollbar-track {
-    background: var(--dark);
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 90%;       
+    max-width: 1200px; 
+    margin: 0 auto;  
+
 }
-::-webkit-scrollbar-thumb {
-    background: var(--dark-purple);
-    border-radius: 10px;
+
+nav ul {
+    display: flex;
+    gap: 1rem;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accent);
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
 }
+nav select.language-selector {
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    background-color: var(--light);
+    color: var(--text-white);
+    border: none;
+}
+
+/* --- HERO --- */
+
