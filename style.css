@@ -21,7 +21,15 @@
     --transition: all 0.3s ease;
 }
 html, body { overflow-x: hidden; scroll-behavior: smooth; font-size: 16px;}
-footer { background: linear-gradient(180deg, rgba(21, 6, 24, 0.856), rgba(6, 9, 24, 0.897)); backdrop-filter: blur(10px); }
+footer { 
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: -3.5rem; 
+    background: linear-gradient(180deg, rgba(21, 6, 24, 0.4), rgba(6, 9, 24, 0.8));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
 footer p { margin: 0; padding: 1rem; text-align: center;}
 
 body {
@@ -119,6 +127,8 @@ section { display: flex; align-items: center; justify-content: center; }
 }
 
 
+
+
 /* --- BARRA DE NAVEGACIÓN --- */
 header {
     position: fixed;
@@ -193,12 +203,6 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
 }
 .hero-content h3 { color: var(--text-gray); font-size: 1.25rem; }
 
-.bg-hero {
-    background-image: linear-gradient(180deg, rgba(44, 42, 56, 0.781), rgb(6, 9, 24)), url('img/banner-hero.jpg');
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
 /* --- ABOUT ME ---*/
 .container-personalInfo, .hobby-item {
     background: var(--card-gray); 
@@ -507,6 +511,10 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
 }
 
 /* --- CONTACTO --- */
+#contact {
+    position: relative;
+    z-index: 1;
+}
 #contact .two-columns-container {
     align-items: stretch;
     gap: 4rem;
@@ -587,4 +595,18 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
 }
 .bg-light {
     background: linear-gradient(180deg, rgb(44, 42, 56), rgb(6, 9, 24)); 
+}
+
+.bg-hero {
+    background-image: linear-gradient(180deg, rgba(44, 42, 56, 0.781), rgb(6, 9, 24)), url('img/banner-hero.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-contact {
+    background-image: linear-gradient(180deg, rgb(6, 9, 24), rgba(21, 6, 24, 0.801)), url('img/contact-bg.JPG');
+    backdrop-filter: blur(10px); 
+    background-position: center;
+    background-size: cover;
 }
