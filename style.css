@@ -518,6 +518,16 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     margin-bottom: 1rem;
 }
 
+.collapsible-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsible-text.expanded { -webkit-line-clamp: unset; }
+
 .project-card a {
     font-size: 0.85rem;
     color: var(--text-gray);

@@ -19,4 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, observerOptions);
 
     elementsToAnimate.forEach(el => observer.observe(el));
+
+        // 2. Lógica de botones "Ver más"
+    document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function() {
+            const textElement = this.parentElement.querySelector('.collapsible-text');
+            if (textElement) {
+                const isExpanded = textElement.classList.toggle('expanded');
+                this.textContent = isExpanded ? 'Ocultar' : 'Ver más...';
+            }
+        });
+    });
 });
