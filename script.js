@@ -218,6 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         localStorage.setItem('preferredLang', lang);
         updateContent(lang);
+        gtag('config', 'G-VFQEJ35YK8', {'page_path': location.pathname + location.search + location.hash});
     }
     updateContent(lang);
 
