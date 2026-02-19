@@ -18,14 +18,15 @@
     /* Variables de diseño */
     --radius-lg: 1.5rem;
     --radius-md: 0.75rem;
-    --transition: all 0.3s ease;
+    --transition: all 0.3s ease, all 0.3s ease-in-out;
 }
-html, body { overflow-x: hidden; scroll-behavior: smooth; font-size: 16px;}
+main { overflow: clip; }
+html, body { overflow-x: hidden; scroll-behavior: smooth; font-size: 16px; background-color: #060918; }
 footer { 
-    position: relative;
+    position: absolute;
     width: 100%;
+    bottom: 0;
     z-index: 10;
-    margin-top: -3.5rem; 
     background: linear-gradient(180deg, rgba(21, 6, 24, 0.4), rgba(6, 9, 24, 0.8));
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
@@ -118,12 +119,12 @@ section { display: flex; align-items: center; justify-content: center; }
     color: var(--text-white);
     border-radius: var(--radius-md);
     font-weight: 600;
+    transition: var(--transition);
 }
 .download-cv:hover {
     background: var(--accent);
     color: var(--text-white);
     transform: translateY(-3px);
-    transition: all 0.3s ease;
 }
 
 /* --- MINI STACK & BADGES PARA CARDS --- */
@@ -181,7 +182,6 @@ nav p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 800;
     color: var(--accent);
 }
 nav ul { display: flex; }
@@ -196,7 +196,7 @@ nav select.language-selector {
     color: var(--text-white);
     border: none;
 }
-nav li:hover { color: var(--accent); border-color: var(--accent); transform: scale(1.1); filter: drop-shadow(0 0 5px var(--accent));}
+nav li:hover { color: var(--accent); border-color: var(--accent); transform: scale(1.1); filter: drop-shadow(0 0 5px var(--accent)); font-weight: 800;}
 
 /* --- HERO --- */
 
@@ -218,10 +218,9 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     border-radius: 1rem;
     border: 2px solid var(--dark-purple);
 }
-.profile-image img { object-fit: cover; opacity: 80%; }
+.profile-image img { object-fit: cover; opacity: 80%; transition: var(--transition);}
 .profile-image:hover img {
     transform: scale(1.05);
-    transition: var(--transition);
     opacity: 100%;
 }
 
@@ -636,4 +635,17 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     backdrop-filter: blur(10px); 
     background-position: center;
     background-size: cover;
+}
+
+/* Estado inicial de todo lo que se va a animar */
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Clase que inyectaremos con JS cuando el elemento sea visible */
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
