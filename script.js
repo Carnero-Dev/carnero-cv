@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "project-typingmonke-description": "Co-fundador y Desarrollador en este colectivo técnico especializado en Unity y Unreal Engine 5. Durante más de 2 años, he liderado el desarrollo de múltiples proyectos publicados en Itch.io y pivotado estrategias de producción basadas en el análisis del mercado (como la transición de 'Jackplot' a 'Disconnected'). Demuestra mi capacidad para gestionar flujos de trabajo profesionales, metodologías ágiles y equipos remotos de forma sostenida y eficiente.",
             "project-typingmonke-link": "Linktree del equipo",
             "section-title-contact": "Información de Contacto",
-            "telephone-label": "<strong>Teléfono:</strong> +34 664 01 25 47",
-            "location-label": "<strong>Ubicación:</strong> Málaga, España",
+            "telephone-label": "Teléfono:",
+            "location-label": "Ubicación:",
             "looking-for-job": " Buscando Empleo ",
             "job-full-time": "Jornada completa o parcial.",
             "job-remote": "Presencial (Málaga) o Remoto.",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "title-last-activity": "Última Actividad",
             "last-activity-date": "12 febrero - 2026",
             "last-activity-title": "Lanzamiento de página de Steam",
-            "last-activity-description": "Descripción breve del proyecto destacado, tecnologías utilizadas y resultados obtenidos.",
+            "last-activity-description": '¡Hito alcanzado! Hemos publicado oficialmente la página de Steam de <span class="accent">Disconnected</span>. Este proceso ha implicado la gestión de activos de marketing, optimización de tráilers y el cumplimiento de los estándares de publicación de Valve. Tras meses de desarrollo liderando la arquitectura técnica en <span class="accent">Unreal Engine 5</span>, este paso marca el inicio de nuestra fase de comunidad y wishlist, acercando el proyecto al mercado global de videojuegos.',
             "last-activity-link": "Ver Página de Steam"
          },
         en: { 
@@ -177,8 +177,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "project-typingmonke-description": "Co-founder and Developer in this technical collective specialized in Unity and Unreal Engine 5. For over 2 years, I have led the development of multiple projects published on Itch.io and pivoted production strategies based on market analysis (such as the transition from 'Jackplot' to 'Disconnected'). Demonstrates my ability to manage professional workflows, agile methodologies, and remote teams efficiently.",
             "project-typingmonke-link": "Team Linktree",
             "section-title-contact": "Contact Information",
-            "telephone-label": "<strong>Phone:</strong> +34 664 01 25 47",
-            "location-label": "<strong>Location:</strong> Málaga, Spain",
+            "telephone-label": "Phone:",
+            "location-label": "Location:",
             "looking-for-job": " Actively Seeking Employment ",
             "job-full-time": "Full-time or part-time roles.",
             "job-remote": "On-site (Málaga) or Remote.",
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "title-last-activity": "Latest Activity",
             "last-activity-date": "February 12, 2026",
             "last-activity-title": "Steam Page Launch",
-            "last-activity-description": "Brief description of the featured project, technologies used, and results achieved.",
+            "last-activity-description": `Milestone reached! We have officially launched the Steam store page for <span class="accent">Disconnected</span>. This process involved managing marketing assets, trailer optimization, and meeting Valve's rigorous publishing standards. After months of leading the technical architecture in <span class="accent">Unreal Engine 5</span>, this step marks the beginning of our community and wishlist phase, bringing the project closer to the global gaming market.`,
             "last-activity-link": "View Steam Page"
          }
     };
