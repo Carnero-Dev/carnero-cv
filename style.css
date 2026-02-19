@@ -658,3 +658,42 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     opacity: 1;
     transform: translateY(0);
 }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 2rem; /* Reduce espacio en los laterales */
+    }
+
+    nav ul {
+        gap: 0.5rem; /* Estrecha la separación entre elementos */
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0.75rem;
+        font-size: 1.1rem; /* Un poco más pequeño para que quepa todo */
+    }
+
+    .language-selector {
+        margin-left: 0.5rem;
+    }
+
+    .language-selector a {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Si aún se solapan en pantallas muy pequeñas (tablets verticales) */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Permite que el selector de idioma baje de fila si no cabe */
+        justify-content: center;
+    }
+    
+    header {
+        height: auto; /* Para que el nav crezca si los elementos se envuelven */
+        padding: 1rem 0;
+    }
+}
