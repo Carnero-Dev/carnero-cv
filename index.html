@@ -16,15 +16,16 @@
 				<p>CCC</p>
 			</div>
 			<ul>
-				<li><a href="#hero">Inicio</a></li>
-				<li><a href="#about">Sobre Mi</a></li>
-				<li><a href="#skills">Proyectos</a></li>
-				<li><a href="#contact">Contacto</a></li>
+				<li><a data-key="nav-home" href="#hero">Inicio</a></li>
+				<li><a data-key="nav-about" href="#about">Sobre Mi</a></li>
+				<li><a data-key="nav-projects" href="#skills">Proyectos</a></li>
+				<li><a data-key="nav-contact" href="#contact">Contacto</a></li>
 				<li>
-					<select class="language-selector">
-						<option value="es">Español</option>
-						<option value="en">English</option>
-					</select>
+					<div class="language-selector">
+						<a href="?lang=es" onclick="changeLanguage('es'); return false;">Español</a>
+						<span>|</span>
+						<a href="?lang=en" onclick="changeLanguage('en'); return false;">English</a>
+					</div>
 				</li>
 			</ul>
 		</nav>
@@ -40,8 +41,8 @@
 						<img src="img/profile.jpg" alt="Carlos Carnero Cabrera">
 					</div>
 					<div>
-						<h2> Programador Full Stack y Desarrollador de videojuegos </h2>
-						<h3> Redes Profesionales </h3>
+						<h2 data-key="job-title"> Programador Full Stack y Desarrollador de videojuegos </h2>
+						<h3 data-key="social-links"> Redes Profesionales </h3>
 						<div class="social-links">
 							<a href="https://jukilogame.itch.io/" target="_blank" rel="noopener noreferrer"><img src="img/itchio-icon.png" alt="Itchio"></a>
 							<a href="https://github.com/Carnero-Dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"></a>
@@ -53,58 +54,58 @@
 		</section>
 		<section id="about" class=" bg-dark">
 			<div class="container-center glass-box about-content">
-				<h2 class="section-title">Sobre Mi</h2>
+				<h2 data-key="section-title-about" class="section-title">Sobre Mi</h2>
 				<div class="two-columns-container">
 					<div>
-						<p>Mi trayectoria une la ingeniería robusta con la creación artística. Como <span
+						<p data-key="about-desc">Mi trayectoria une la ingeniería robusta con la creación artística. Como <span
 								class="accent">Programador Full Stack y Desarrollador de Videojuegos</span>, construyo
 							arquitecturas escalables y sistemas optimizados al servicio del usuario. Aprendí mediante
 							ingeniería inversa, desarrollando una capacidad analítica clave para <span
 								class="accent">resolver crisis técnicas y optimizar flujos de trabajo</span>. Analizo
 							rápido y ejecuto soluciones sin frenar al equipo, combinando la precisión del software con
 							la <span class="accent">sensibilidad del diseño interactivo</span> y el arte.</p>
-						<a href="docs/cv-fullstack.pdf" download="CV-CarlosCarneroCabrera-FullStack" class="download-cv">Descargar CV - FullStack</a>
-						<a href="docs/cv-gamedev.pdf" download="CV-CarlosCarneroCabrera-GameDev" class="download-cv">Descargar CV - GameDev</a>
+						<a data-key="download-fullstack" href="docs/cv-fullstack.pdf" download="CV-CarlosCarneroCabrera-FullStack" class="download-cv">Descargar CV - FullStack</a>
+						<a data-key="download-gamedev" href="docs/cv-gamedev.pdf" download="CV-CarlosCarneroCabrera-GameDev" class="download-cv">Descargar CV - GameDev</a>
 					</div>
 					<div>
 						<div class="container-personalInfo">
-							<div class="info-item"><span class="label">Edad:</span>
-								<p>24 años</p>
+							<div class="info-item"><span data-key="personal-label-1" class="label">Edad:</span>
+								<p data-key="personal-info-1">24 años</p>
 							</div>
-							<div class="info-item"><span class="label">Ubicación:</span>
-								<p>Málaga, España</p>
+							<div class="info-item"><span data-key="personal-label-2" class="label">Ubicación:</span>
+								<p data-key="location-label">Málaga, España</p>
 							</div>
-							<div class="info-item"><span class="label">Idiomas:</span>
-								<p>Español nativo / Inglés (B2)</p>
+							<div class="info-item"><span data-key="personal-label-3" class="label">Idiomas:</span>
+								<p data-key="personal-info-3">Español nativo / Inglés (B2)</p>
 							</div>
-							<div class="info-item"><span class="label">Carné de conducir:</span>
-								<p>B </p>
+							<div class="info-item"><span data-key="personal-label-4" class="label">Carné de conducir:</span>
+								<p data-key="personal-info-4">B </p>
 							</div>
 						</div>
 						<div class="container-hobbies">
 							<div class="hobby-item">
 								<div class="emoji">🎮</div>
-								<p>Videojuegos</p>
+								<p data-key="hobby-1">Videojuegos</p>
 							</div>
 							<div class="hobby-item">
 								<div class="emoji">🎹</div>
-								<p>Piano</p>
+								<p data-key="hobby-2">Piano</p>
 							</div>
 							<div class="hobby-item">
 								<div class="emoji">✈️</div>
-								<p>Viajar</p>
+								<p data-key="hobby-3">Viajar</p>
 							</div>
 							<div class="hobby-item">
 								<div class="emoji">🔧</div>
-								<p>Desarmar y reconstruir</p>
+								<p data-key="hobby-4">Desarmar y reconstruir</p>
 							</div>
 							<div class="hobby-item">
 								<div class="emoji">🌌</div>
-								<p>Astronomia</p>
+								<p data-key="hobby-5">Astronomia</p>
 							</div>
 							<div class="hobby-item">
 								<div class="emoji">♟️</div>
-								<p>Estrategia</p>
+								<p data-key="hobby-6">Estrategia</p>
 							</div>
 						</div>
 					</div>
@@ -113,7 +114,7 @@
 		</section>
 		<section id="skills" class=" bg-light">
 			<div class="container-center">
-				<h2 class="section-title">Skills y Stack</h2>
+				<h2 data-key="section-title-skills" class="section-title">Skills y Stack</h2>
 				<div class="stack-container">
 					<div class="icon-item"> <img class="skill-icon"
 							src="https://skillicons.dev/icons?i=unity"><span>Unity</span></div>
@@ -158,11 +159,11 @@
 							src="https://skillicons.dev/icons?i=azure"><span>Azure</span></div>
 				</div>
 				<div class="softSkills-container">
-					<span class="badge-pill"> 🤝 Trabajo en equipos multidisciplinares </span>
-					<span class="badge-pill"> 📚 Autodidacta </span>
-					<span class="badge-pill"> 📋 Organizado </span>
-					<span class="badge-pill"> 💪 Trabajo bajo presión </span>
-					<span class="badge-pill"> 🚀 Audacia </span>
+					<span data-key="soft-skill-1" class="badge-pill"> 🤝 Trabajo en equipos multidisciplinares </span>
+					<span data-key="soft-skill-2" class="badge-pill"> 📚 Autodidacta </span>
+					<span data-key="soft-skill-3" class="badge-pill"> 📋 Organizado </span>
+					<span data-key="soft-skill-4" class="badge-pill"> 💪 Trabajo bajo presión </span>
+					<span data-key="soft-skill-5" class="badge-pill"> 🚀 Audacia </span>
 				</div>
 			</div>
 		</section>
@@ -171,15 +172,15 @@
 				<h2 class="section-title">Curriculum</h2>
 				<div class="two-columns-container">
 					<div class="cv-wrapper">
-						<h3 class="section-subtitle">Educación</h3>
+						<h3 data-key="cv-education-title" class="section-subtitle">Formación</h3>
 						<div class="hard-card">
-							<span class="date">Septiembre 2025 - Diciembre 2025</span>
-							<h3>Bootcamp programación Full Stack</h3>
-							<h4>Fundación ESPLAI</h4>
+							<span data-key="education-1-date" class="date">Septiembre 2025 - Diciembre 2025</span>
+							<h3 data-key="education-1-title">Bootcamp programación Full Stack</h3>
+							<h4 data-key="education-1-school">Fundación ESPLAI</h4>
 							<ul>
-								<li>Curso práctico de 56 horas en soft skills.</li>
-								<li>Certificado de Azure (AZ-900).</li>
-								<li>Todo desarrollo Full Stack (Frontend, Backend, BbDd, Despliegue).</li>
+								<li data-key="education-1-description-1">Curso práctico de 56 horas en soft skills.</li>
+								<li data-key="education-1-description-2">Certificado de Azure (AZ-900).</li>
+								<li data-key="education-1-description-3">Todo desarrollo Full Stack (Frontend, Backend, BbDd, Despliegue).</li>
 							</ul>
 							<div class="card-stack">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=java" title="Java">
@@ -192,13 +193,13 @@
 							</div>
 						</div>
 						<div class="hard-card">
-							<span class="date">Septiembre 2022 - Junio 2024</span>
-							<h3>Desarrollador de videojuegos</h3>
-							<h4>EVAD Málaga</h4>
+							<span data-key="education-2-date" class="date">Septiembre 2022 - Junio 2024</span>
+							<h3 data-key="education-2-title">Desarrollador de videojuegos</h3>
+							<h4 data-key="education-2-school">EVAD Málaga</h4>
 							<ul>
-								<li>Formación completa en todas las áreas del desarrollo.</li>
-								<li>Participación en equipos multidisciplinares y Game Jams..</li>
-								<li>Descubrí mi vocación por la programación y diseño de videojuegos.</li>
+								<li data-key="education-2-description-1">Formación completa en todas las áreas del desarrollo.</li>
+								<li data-key="education-2-description-2">Participación en equipos multidisciplinares y Game Jams..</li>
+								<li data-key="education-2-description-3">Descubrí mi vocación por la programación y diseño de videojuegos.</li>
 							</ul>
 							<div class="card-stack">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=unity" title="Unity">
@@ -206,15 +207,15 @@
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=blender" title="Blender">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=photoshop" title="Photoshop">
 								<img class="mini-icon" src="img/sourcetree-icon.png" title="Sourcetree">
-								<span class="mini-badge">Trabajo con equipos Multidisciplinares</span>
+								<span data-key="education-2-soft-skill-1" class="mini-badge">Trabajo con equipos Multidisciplinares</span>
 							</div>
 						</div>
 						<div class="soft-card">
-							<h3>Otros Estudios</h3>
+							<h3 data-key="cv-other-studies-title">Otros Estudios</h3>
 							<ul>
-								<li>Curso de especialización, Ciberseguridad.</li>
-								<li>Administración de sistemas informáticos en red (ASIR).</li>
-								<li>Administración y gestión de empresas.</li>
+								<li data-key="cv-other-studies-1">Curso de especialización, Ciberseguridad.</li>
+								<li data-key="cv-other-studies-2">Administración de sistemas informáticos en red (ASIR).</li>
+								<li data-key="cv-other-studies-3">Administración y gestión de empresas.</li>
 							</ul>
 							<div class="card-stack">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=ubuntu" title="Ubuntu">
@@ -222,24 +223,24 @@
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=html" title="HTML">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=css" title="CSS">
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=phm" title="phm">
-								<span class="mini-badge">Ciberseguridad</span>
-								<span class="mini-badge">Administración</span>
+								<span data-key="cv-other-studies-soft-skill-1" class="mini-badge">Ciberseguridad</span>
+								<span data-key="cv-other-studies-soft-skill-2" class="mini-badge">Administración</span>
 							</div>
 						</div>
 					</div>
 					<div class="cv-wrapper">
-						<h3 class="section-subtitle">Experiencia Laboral</h3>
+						<h3 data-key="cv-work-title" class="section-subtitle">Experiencia Laboral</h3>
 						<div class="hard-card">
-							<span class="date">Mayo 2024 - Actualidad</span>
-							<h3>Programador Lider en Unity y Unreal || Co-Fundador</h3>
-							<h4>Typing Monnke</h4>
+							<span data-key="work-1-date" class="date">Mayo 2024 - Actualidad</span>
+							<h3 data-key="work-1-title">Programador Lider en Unity y Unreal || Co-Fundador</h3>
+							<h4 data-key="work-1-company">Typing Monnke</h4>
 							<ul>
-								<li>Coordinación de un equipo multidisciplinar</li>
-								<li>Resolución de crisis técnicas y de producción</li>
-								<li>Ingeniería inversa e integración de nuevas tecnologías en los proyectos.</li>
-								<li>Desarrollo de sistemas escalables orientadas a herramientas de diseño.</li>
-								<li>Gestión de flujos de trabajo con Git y GitHub.</li>
-								<li>Uso de metodología Scrum utilizando Jira y otras herramientas de Atlasian.</li>
+								<li data-key="work-1-description-1">Coordinación de un equipo multidisciplinar</li>
+								<li data-key="work-1-description-2">Resolución de crisis técnicas y de producción</li>
+								<li data-key="work-1-description-3">Ingeniería inversa e integración de nuevas tecnologías en los proyectos.</li>
+								<li data-key="work-1-description-4">Desarrollo de sistemas escalables orientadas a herramientas de diseño.</li>
+								<li data-key="work-1-description-5">Gestión de flujos de trabajo con Git y GitHub.</li>
+								<li data-key="work-1-description-6">Uso de metodología Scrum utilizando Jira y otras herramientas de Atlasian.</li>
 								<li>Mejoras de optimización de hasta un 500% en varios proyectos del equipo.</li>
 							</ul>
 							<div class="card-stack">
@@ -248,26 +249,26 @@
 								<img class="mini-icon" src="https://skillicons.dev/icons?i=blender" title="Blender">
 								<img class="mini-icon" src="img/jira-icon.png" title="Jira">
 								<img class="mini-icon" src="img/perforce-icon.jpg" title="Perforce">
-								<span class="mini-badge">Liderazgo</span>
-								<span class="mini-badge">Scrum</span>
+								<span data-key="work-1-soft-skill-1" class="mini-badge">Liderazgo</span>
+								<span data-key="work-1-soft-skill-2" class="mini-badge">Scrum</span>
 							</div>
 						</div>
 						<div class="soft-card">
-							<h3>Trabajos Varios</h3>
-							<h4> Europa (Paises Bajos, Suecia, Alemania) y ST Marten (Antillas)</h4>
+							<h3 data-key="other-jobs-title">Trabajos Varios</h3>
+							<h4 data-key="other-jobs-subtitle"> Europa (Paises Bajos, Suecia, Alemania) y ST Marten (Antillas)</h4>
 							<ul>
-								<li>Bartender / Camarero en eventos.</li>
-								<li>Mozo de almacén / Operador Logístico</li>
-								<li>Ayudante de veterinario</li>
+								<li data-key="other-jobs-description-1">Bartender / Camarero en eventos.</li>
+								<li data-key="other-jobs-description-2">Mozo de almacén / Operador Logístico</li>
+								<li data-key="other-jobs-description-3">Ayudante de veterinario</li>
 							</ul>
-							<p><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos
+							<p data-key="other-jobs-impact"><span class="accent">Impacto:</span> Adaptabilidad cultural absoluta y gestión de equipos
 								en entornos de alta presión con personas de diversos países.</p>
 							<div class="card-stack">
-								<span class="mini-badge">Inglés</span>
-								<span class="mini-badge">Audacia</span>
-								<span class="mini-badge">Cadena de mandos</span>
-								<span class="mini-badge">Disciplina</span>
-								<span class="mini-badge">Autogestión</span>
+								<span data-key="other-jobs-soft-skill-1" class="mini-badge">Inglés</span>
+								<span data-key="other-jobs-soft-skill-2" class="mini-badge">Audacia</span>
+								<span data-key="other-jobs-soft-skill-3" class="mini-badge">Cadena de mandos</span>
+								<span data-key="other-jobs-soft-skill-4" class="mini-badge">Disciplina</span>
+								<span data-key="other-jobs-soft-skill-5" class="mini-badge">Autogestión</span>
 							</div>
 						</div>
 					</div>
@@ -276,16 +277,16 @@
 		</section>
 		<section id="projects" class=" bg-light">
 			<div class="container-center">
-				<h2 class="section-title">Proyectos</h2>
+				<h2 data-key="section-title-projects" class="section-title">Proyectos</h2>
 				<div class="project-wrapper">
 					<div class="project-card">
 						<div><img src="img/project-dishdraft.png"></div>
 						<div>
 							<span class="category">SaaS</span>
 							<h3>DishDraft</h3>
-							<p class="collapsible-text">Plataforma Full Stack de gestión nutricional y organización familiar. El proyecto evolucionó de un MVP académico a una herramienta compleja que integra la API de OpenFoodFacts para procesar información nutricional en tiempo real. Diseñé e implementé el Backend con MongoDB, el sistema de autenticación y la sincronización de datos con el Frontend. Permite a los usuarios planificar menús semanales y realizar un seguimiento exhaustivo de ingredientes reales y valores energéticos.</p>
-							<button class="read-more">Leer más...</button>
-							<a href="https://www.dishdraft.es" target="_blank" rel="noopener noreferrer">Ver Demo Tecnica</a>
+							<p data-key="project-dishdraft-description" class="collapsible-text">Plataforma Full Stack de gestión nutricional y organización familiar. El proyecto evolucionó de un MVP académico a una herramienta compleja que integra la API de OpenFoodFacts para procesar información nutricional en tiempo real. Diseñé e implementé el Backend con MongoDB, el sistema de autenticación y la sincronización de datos con el Frontend. Permite a los usuarios planificar menús semanales y realizar un seguimiento exhaustivo de ingredientes reales y valores energéticos.</p>
+							<button class="read-more">Read more...</button>
+							<a data-key="project-dishdraft-link" href="https://www.dishdraft.es" target="_blank" rel="noopener noreferrer">Ver Demo Tecnica</a>
 						</div>
 					</div>
 					<div class="project-card">
@@ -293,9 +294,9 @@
 						<div>
 							<span class="category">Game Dev</span>
 							<h3>Disconnected</h3>
-							<p class="collapsible-text">Survival Horror desarrollado en Unreal Engine 5. Como Lead Programmer, diseñé y ejecuté la arquitectura lógica central del título: sistemas de guardado dinámico, gestión de inventario, árboles de comportamiento para IA y el motor de eventos globales. Además de la implementación técnica, coordiné al equipo multidisciplinar para garantizar la cohesión entre las mecánicas de juego y el rendimiento técnico bajo los estándares de UE5.</p>
-							<button class="read-more">Leer más...</button>
-							<a href="https://store.steampowered.com/app/4346240/Disconnected/" target="_blank" rel="noopener noreferrer">Ver Página de Steam</a>
+							<p data-key="project-disconnected-description" class="collapsible-text">Survival Horror desarrollado en Unreal Engine 5. Como Lead Programmer, diseñé y ejecuté la arquitectura lógica central del título: sistemas de guardado dinámico, gestión de inventario, árboles de comportamiento para IA y el motor de eventos globales. Además de la implementación técnica, coordiné al equipo multidisciplinar para garantizar la cohesión entre las mecánicas de juego y el rendimiento técnico bajo los estándares de UE5.</p>
+							<button class="read-more">Read more...</button>
+							<a data-key="project-disconnected-link" href="https://store.steampowered.com/app/4346240/Disconnected/" target="_blank" rel="noopener noreferrer">Ver Página de Steam</a>
 						</div>
 					</div>
 					<div class="project-card">
@@ -303,9 +304,9 @@
 						<div>
 							<span class="category">TeamWork</span>
 							<h3>Typing Monke</h3>
-							<p class="collapsible-text">Co-fundador y Desarrollador en este colectivo técnico especializado en Unity y Unreal Engine 5. Durante más de 2 años, he liderado el desarrollo de múltiples proyectos publicados en Itch.io y pivotado estrategias de producción basadas en el análisis del mercado (como la transición de 'Jackplot' a 'Disconnected'). Demuestra mi capacidad para gestionar flujos de trabajo profesionales, metodologías ágiles y equipos remotos de forma sostenida y eficiente.</p>
-							<button class="read-more">Leer más...</button>
-							<a href="https://linktr.ee/TypingMonke" target="_blank" rel="noopener noreferrer">Linktree del equipo</a>
+							<p data-key="project-typingmonke-description" class="collapsible-text">Co-fundador y Desarrollador en este colectivo técnico especializado en Unity y Unreal Engine 5. Durante más de 2 años, he liderado el desarrollo de múltiples proyectos publicados en Itch.io y pivotado estrategias de producción basadas en el análisis del mercado (como la transición de 'Jackplot' a 'Disconnected'). Demuestra mi capacidad para gestionar flujos de trabajo profesionales, metodologías ágiles y equipos remotos de forma sostenida y eficiente.</p>
+							<button class="read-more">Read more...</button>
+							<a data-key="project-typingmonke-link" href="https://linktr.ee/TypingMonke" target="_blank" rel="noopener noreferrer">Linktree del equipo</a>
 						</div>
 					</div>
 				</div>
@@ -315,24 +316,24 @@
 			<div class="container-center">
 				<div class="two-columns-container">
 					<div>
-						<h3 class="section-title">Información de Contacto</h3>
+						<h3 data-key="section-title-contact" class="section-title">Información de Contacto</h3>
 						<ul>
 							<li><strong>Email:</strong> carnero.dev@gmail.com</li>
-							<li><strong>Teléfono:</strong> +34 664 01 25 47</li>
-							<li><strong>Ubicación:</strong> Málaga, España</li>
+							<li data-key="telephone-label"><strong>Teléfono:</strong> +34 664 01 25 47</li>
+							<li data-key="location-label"><strong>Ubicación:</strong> Málaga, España</li>
 						</ul>
 						<div class="hard-card">
 							<span class="animated-point"> </span>
-							<p> Buscando Empleo </p>
+							<p data-key="looking-for-job"> Buscando Empleo </p>
 							<ul>
-								<li>Jornada completa o parcial.</li>
-								<li>Presencial (Málaga) o Remoto.</li>
-								<li>Disponibilidad para desplazamientos ocasionales a nivel internacional.</li>
+								<li data-key="job-full-time">Jornada completa o parcial.</li>
+								<li data-key="job-remote">Presencial (Málaga) o Remoto.</li>
+								<li data-key="job-travel">Disponibilidad para desplazamientos ocasionales a nivel internacional.</li>
 							</ul>
-							<a href="docs/cv-fullstack.pdf" download="CV-CarlosCarneroCabrera-FullStack" class="download-cv">Descargar CV - FullStack</a>
-							<a href="docs/cv-gamedev.pdf" download="CV-CarlosCarneroCabrera-GameDev" class="download-cv">Descargar CV - GameDev</a>
+							<a data-key="download-fullstack" href="docs/cv-fullstack.pdf" download="CV-CarlosCarneroCabrera-FullStack" class="download-cv">Descargar CV - FullStack</a>
+							<a data-key="download-gamedev" href="docs/cv-gamedev.pdf" download="CV-CarlosCarneroCabrera-GameDev" class="download-cv">Descargar CV - GameDev</a>
 						</div>
-						<h3> Redes Personales </h3>
+						<h3 data-key="social-links"> Redes Personales </h3>
 						<div class="social-links">
 							<a href="https://jukilogame.itch.io/" target="_blank" rel="noopener noreferrer"><img src="img/itchio-icon.png" alt="itchio"></a>
 							<a href="https://github.com/Carnero-Dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=github"></a>
@@ -340,7 +341,7 @@
 						</div>
 					</div>
 					<div>
-						<h3 class="section-title">Última Actividad</h3>
+						<h3 data-key="title-last-activity" class="section-title">Última Actividad</h3>
 						<div class="project-card">
 							<div><iframe width="560" height="315"
 									src="https://www.youtube.com/embed/HpjYUECTpGM?si=KjksUafnxcedZY-M"
@@ -348,12 +349,12 @@
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 							<div>
-								<span class="date">12 febrero - 2026</span>
-								<h3>Lanzamiento de página de Steam</h3>
-								<p>Descripción breve del proyecto destacado, tecnologías utilizadas y resultados
+								<span data-key="last-activity-date" class="date">12 febrero - 2026</span>
+								<h3 data-key="last-activity-title">Lanzamiento de página de Steam</h3>
+								<p data-key="last-activity-description">Descripción breve del proyecto destacado, tecnologías utilizadas y resultados
 									obtenidos.</p>
-								<button class="read-more">Leer más...</button>
-								<a href="https://store.steampowered.com/app/4346240/Disconnected/" target="_blank" rel="noopener noreferrer">Ver Página de
+								<button class="read-more">Read more...</button>
+								<a data-key="last-activity-link" href="https://store.steampowered.com/app/4346240/Disconnected/" target="_blank" rel="noopener noreferrer">Ver Página de
 									Steam</a>
 							</div>
 						</div>

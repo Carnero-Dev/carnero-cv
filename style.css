@@ -187,16 +187,44 @@ nav p {
 nav ul { display: flex; }
 nav li {border-left: 2px solid var(--text-white); transition: var(--transition);}
 nav ul li a { padding: 0.75rem 1rem; font-size: 1.25rem; }
-nav select.language-selector {
+nav li:hover { color: var(--accent); border-color: var(--accent); transform: scale(1.1); filter: drop-shadow(0 0 5px var(--accent)); font-weight: 800;}
+
+.language-selector {
+    overflow: hidden;
     margin-left: 1rem;
-    font-size: 1rem;
-    padding: 0.5rem;
+    padding: 1rem, 0;
     border-radius: var(--radius-md);
-    background-color: var(--light);
+    background-color: var(--blue-dark);
     color: var(--text-white);
     border: none;
 }
-nav li:hover { color: var(--accent); border-color: var(--accent); transform: scale(1.1); filter: drop-shadow(0 0 5px var(--accent)); font-weight: 800;}
+.language-selector a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.language-selector a.active {
+    color: var(--text-white);
+    background-color: var(--accent);
+    filter: grayscale(0);
+    font-weight: bold;
+}
+
+.language-selector:hover a {
+    filter: grayscale(1);
+    text-shadow: none;
+}
+
+.language-selector a:hover {
+    color: var(--text-white) !important;
+    background-color: var(--accent) !important;
+    filter: grayscale(0) drop-shadow(0 0 5px var(--accent)) !important;
+    transform: translateY(-2px);
+}
 
 /* --- HERO --- */
 
@@ -508,7 +536,6 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     margin: 0.5rem 0;
 }
 
-
 .read-more {
     color: var(--accent);
     font-weight: 700;
@@ -525,7 +552,6 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
-
 .collapsible-text.expanded { -webkit-line-clamp: unset; }
 
 .project-card a {
@@ -537,41 +563,16 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     gap: 0.5rem;
     transition: var(--transition);
 }
-
-.project-card a:hover {
-    color: var(--text-white);
-}
-
-.project-card a::after {
-    content: " →";
-}
+.project-card a:hover { color: var(--text-white); }
+.project-card a::after { content: " →"; }
 
 /* --- CONTACTO --- */
-#contact {
-    position: relative;
-    z-index: 1;
-}
-#contact .two-columns-container {
-    align-items: stretch;
-    gap: 4rem;
-}
+#contact { position: relative; z-index: 1; }
+#contact .two-columns-container { align-items: stretch; gap: 4rem; }
+#contact ul { margin-bottom: 2rem; }
+#contact ul li { margin-bottom: 0.8rem; font-size: 1rem; }
+#contact ul li strong { color: var(--text-white);  margin-right: 5px; }
 
-/* Lista de contacto (Email, Tel, Ubicación) */
-#contact ul {
-    margin-bottom: 2rem;
-}
-
-#contact ul li {
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
-}
-
-#contact ul li strong {
-    color: var(--text-white);
-    margin-right: 5px;
-}
-
-/* Tarjeta "Buscando Empleo" */
 #contact .hard-card {
     position: relative;
     padding: 1.5rem;
@@ -589,7 +590,6 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     box-shadow: 0 0 8px #4ade80;
     animation: pulse 2s infinite;
 }
-
 @keyframes pulse {
     0% { transform: scale(0.95); opacity: 0.7; }
     50% { transform: scale(1.2); opacity: 1; }
@@ -647,14 +647,13 @@ nav li:hover { color: var(--accent); border-color: var(--accent); transform: sca
     background-size: cover;
 }
 
-/* Estado inicial de todo lo que se va a animar */
+/* --- ANIMACIONES --- */
 .fade-in-scroll {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease-out;
 }
 
-/* Clase que inyectaremos con JS cuando el elemento sea visible */
 .fade-in-scroll.visible {
     opacity: 1;
     transform: translateY(0);
